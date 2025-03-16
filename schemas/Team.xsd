@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://example.com/team"
+        xmlns:tns="http://example.com/team"
+        xmlns:person="http://example.com/person"
+        elementFormDefault="qualified">
+    <xs:import namespace="http://example.com/person" schemaLocation="Person.xsd"/>
+
+    <xs:complexType name="ct_team">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Members" type="person:ct_person" maxOccurs="unbounded"/>
+            <xs:element name="Formed" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="Team" type="tns:ct_team"/>
+</xs:schema>

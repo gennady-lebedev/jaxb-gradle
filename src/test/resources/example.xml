@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Team xmlns="http://example.com/team"
+      xmlns:person="http://example.com/person"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://example.com/team Team.xsd http://example.com/person Person.xsd">
+    <Name>Alpha Team</Name>
+    <Formed>2025-01-02 03:04:05.678</Formed>
+    <Members>
+        <person:Name>Alice</person:Name>
+        <person:Age>30</person:Age>
+        <person:Score>95.5</person:Score>
+    </Members>
+    <Members>
+        <person:Name>Bob</person:Name>
+        <person:Age>28</person:Age>
+        <person:Score>88.75</person:Score>
+    </Members>
+    <Members>
+        <person:Name>Charlie</person:Name>
+        <person:Age>34</person:Age>
+        <person:Score>92.0</person:Score>
+    </Members>
+</Team>

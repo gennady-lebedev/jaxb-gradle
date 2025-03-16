@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings version="2.1"
+              xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+              xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+              xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+              xmlns:person="http://example.com/person"
+              xmlns:team="http://example.com/team">
+    <jxb:globalBindings>
+        <xjc:javaType
+            name="java.sql.Timestamp"
+            xmlType="xs:dateTime"
+            adapter="jaxb.gradle.adapter.TimestampAdapter" />
+    </jxb:globalBindings>
+
+</jxb:bindings>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.com/person"
+           xmlns:tns="http://example.com/person"
+           elementFormDefault="qualified">
+    <xs:complexType name="ct_person">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Age" type="xs:int"/>
+            <xs:element name="Score" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="Person" type="tns:ct_person"/>
+</xs:schema>
